@@ -23,5 +23,8 @@ a {
 }
 
 h1 {
+  margin: -$gap-md 0 1em 0;
+
   font-family: $font-header;
+  font-size: 3rem;
 }

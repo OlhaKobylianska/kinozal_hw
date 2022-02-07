@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -51,8 +51,6 @@
                 <li><a href="#">Рейтинг</a></li>
                 <li><a href="#">Раздачи</a></li>
               </ul>
-              </li>
-              </ul>
             </div>
           </div>
         </nav>
@@ -64,36 +62,212 @@
   <div class="container">
     <div class="row">
       <main class="main col-lg-9 col-md-8 col-lg-push-3 col-md-push-4">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo voluptates reiciendis nisi sint beatae autem
-        dolorum architecto odit laborum officia eum, velit eaque illum pariatur nemo nostrum ex culpa voluptate.
-        Dicta itaque consequuntur sapiente nemo quos rerum repellendus ex dolorem alias. Mollitia sint ipsa non sapiente
-        nobis. Totam vitae, autem magnam minus fuga tempora similique, blanditiis, aperiam nostrum cupiditate error.
-        Ea veritatis doloremque a consectetur exercitationem mollitia, ipsum ducimus nam ex quasi assumenda nihil error
-        repellat harum magni illo quas numquam. Doloremque dolores quam sequi dicta voluptatem optio rerum dolorum!
-        Tempore ut dolor voluptatem ab laborum eligendi distinctio iste delectus nam itaque sint illo est esse nostrum
-        ratione, unde tenetur neque nihil asperiores adipisci facilis? Quod eum ex illum fuga?
-        Mollitia labore expedita nesciunt neque pariatur quia quam reiciendis, deleniti dolorum, vero dignissimos
-        recusandae sunt perspiciatis. Quasi, nostrum perspiciatis odit cumque corporis magnam dolore sapiente officia
-        qui tempora necessitatibus itaque!
-        Reprehenderit corrupti officiis asperiores facere recusandae amet quod, ipsam voluptate beatae nobis incidunt
-        fugiat expedita tempora reiciendis eligendi quam dolores consectetur optio pariatur officia. Ad ipsa quibusdam
-        quae rem cupiditate.
-        Nostrum deleniti aperiam quasi? Quod magnam fuga molestiae asperiores, suscipit facere adipisci minus harum
-        architecto et quas vel nobis quo iste aliquam saepe dolorem molestias ab eveniet vero exercitationem accusamus.
-        Ab, voluptate natus! Corrupti aperiam unde officiis assumenda labore, asperiores minus inventore. Illo alias
-        impedit sunt ratione dolorem iusto perferendis amet? Incidunt impedit labore vel maiores quos tenetur at?
-        Possimus.
-        Modi reprehenderit voluptatibus repellendus laborum, deleniti, voluptate beatae doloribus odit atque ut
-        dignissimos dolore laudantium sit qui molestias harum provident est. Vel quas aut labore unde sapiente ab,
-        consequatur ex?
-        Aperiam earum, aliquam officia facilis pariatur nemo dicta. Fugit dicta consectetur officia minima? Qui id
-        officia blanditiis reiciendis. Dicta earum fuga eligendi soluta adipisci assumenda vero omnis, quasi animi
-        expedita?
+
+        <section class="site-search panel panel-info visible-sm visible-xs">
+          <div class="panel-heading">Поиск</div>
+          <div class="panel-body">
+            <form action="search.php">
+
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+
+            </form>
+          </div>
+        </section>
+
+        <section class="user-login panel panel-info visible-sm visible-xs">
+          <div class="panel-heading">Пользователь</div>
+          <div class="panel-body">
+
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#user-login-main" aria-controls="user-login-main"
+                  role="tab" data-toggle="tab"><span class="glyphicon glyphicon-log-in"></span></a></li>
+              <li role="presentation"><a href="#user-reg-main" aria-controls="user-reg-main" role="tab"
+                  data-toggle="tab"><span class="glyphicon glyphicon-user"></span></a></li>
+            </ul>
+
+            <div class="tab-content user-login__content">
+              <div role="tabpanel" class="tab-pane fade-in active" id="user-login-main">
+
+                <form action="login.php">
+                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
+                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
+                </form>
+
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="user-reg-main">
+
+                <form action="register.php">
+                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
+                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Email"></div>
+                  <button class="btn btn-default btn-block btn-lg" type="submit">Регистрация</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-films">
+          <h1 class="new-films-title">Новые фильмы</h1>
+          <div class="new-films-row row">
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1266931.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Стражи галактики</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1289488.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Занесло</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1341151.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Из машины</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Выхода нет</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1393263.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Человек муравей</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1401663.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Люси</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1415999.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Марсианин</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1423264.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Дочь Бога</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1441076.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Месть от кутюр</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1453229.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">5ять</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1455536.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Люди Икс</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a class="new-films-item__link" href="">
+                  <img class="new-films-item__image" src="assets/img/films/1266931.jpg" alt="Стражи галактики">
+                  <div class="new-films-item__caption caphion">
+                    <h3 class="new-films-item__title">Иллюзия обмана 2</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>ТОП за неделю</h2>
+        </section>
+
+        <section>
+          <h2>Новости кино</h2>
+        </section>
+
       </main>
 
       <aside class="left-sidebar col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8">
 
-        <div class="vertical-slider panel panel-info">
+        <div class="vertical-slider panel panel-info hidden-sm hidden-xs">
           <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#vertical-carousel" data-slide-to="0" class="active"></li>
@@ -124,7 +298,7 @@
           </div>
         </div>
 
-        <div class="site-search panel panel-info">
+        <div class="site-search panel panel-info hidden-sm hidden-xs">
           <div class="panel-heading">Поиск</div>
           <div class="panel-body">
             <form action="search.php">
@@ -142,7 +316,7 @@
           </div>
         </div>
 
-        <div class="user-login panel panel-info">
+        <div class="user-login panel panel-info hidden-sm hidden-xs">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
 
@@ -157,7 +331,7 @@
               <div role="tabpanel" class="tab-pane fade-in active" id="user-login-sidebar">
 
                 <form action="login.php">
-                  <div class="form-group"><input class="form-control input-lg" type="login" placeholder="Логин"></div>
+                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
                   <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
                   </div>
                   <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
@@ -167,7 +341,7 @@
               <div role="tabpanel" class="tab-pane fade" id="user-reg-sidebar">
 
                 <form action="register.php">
-                  <div class="form-group"><input class="form-control input-lg" type="login" placeholder="Логин"></div>
+                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
                   <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
                   </div>
                   <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Email"></div>
