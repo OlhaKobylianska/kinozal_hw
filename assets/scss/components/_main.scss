@@ -1,2 +1,6 @@
 @use "../presets/index" as *;
 @use "../mixins/index" as *;
+
+.main {
+  margin-bottom: $gap-xl;
+}

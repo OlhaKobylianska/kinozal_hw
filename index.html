@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="logo">
 
       <div class="header-logo">
@@ -29,8 +29,8 @@
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#navbar-top" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top"
+                aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -45,13 +45,13 @@
                 <li><a href="#">Сериалы</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
-          
+
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Рейтинг</a></li>
                 <li><a href="#">Раздачи</a></li>
-                  </ul>
-                </li>
+              </ul>
+              </li>
               </ul>
             </div>
           </div>
@@ -60,6 +60,267 @@
 
     </div>
   </header>
+
+  <div class="container">
+    <div class="row">
+      <main class="main col-lg-9 col-md-8 col-lg-push-3 col-md-push-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo voluptates reiciendis nisi sint beatae autem
+        dolorum architecto odit laborum officia eum, velit eaque illum pariatur nemo nostrum ex culpa voluptate.
+        Dicta itaque consequuntur sapiente nemo quos rerum repellendus ex dolorem alias. Mollitia sint ipsa non sapiente
+        nobis. Totam vitae, autem magnam minus fuga tempora similique, blanditiis, aperiam nostrum cupiditate error.
+        Ea veritatis doloremque a consectetur exercitationem mollitia, ipsum ducimus nam ex quasi assumenda nihil error
+        repellat harum magni illo quas numquam. Doloremque dolores quam sequi dicta voluptatem optio rerum dolorum!
+        Tempore ut dolor voluptatem ab laborum eligendi distinctio iste delectus nam itaque sint illo est esse nostrum
+        ratione, unde tenetur neque nihil asperiores adipisci facilis? Quod eum ex illum fuga?
+        Mollitia labore expedita nesciunt neque pariatur quia quam reiciendis, deleniti dolorum, vero dignissimos
+        recusandae sunt perspiciatis. Quasi, nostrum perspiciatis odit cumque corporis magnam dolore sapiente officia
+        qui tempora necessitatibus itaque!
+        Reprehenderit corrupti officiis asperiores facere recusandae amet quod, ipsam voluptate beatae nobis incidunt
+        fugiat expedita tempora reiciendis eligendi quam dolores consectetur optio pariatur officia. Ad ipsa quibusdam
+        quae rem cupiditate.
+        Nostrum deleniti aperiam quasi? Quod magnam fuga molestiae asperiores, suscipit facere adipisci minus harum
+        architecto et quas vel nobis quo iste aliquam saepe dolorem molestias ab eveniet vero exercitationem accusamus.
+        Ab, voluptate natus! Corrupti aperiam unde officiis assumenda labore, asperiores minus inventore. Illo alias
+        impedit sunt ratione dolorem iusto perferendis amet? Incidunt impedit labore vel maiores quos tenetur at?
+        Possimus.
+        Modi reprehenderit voluptatibus repellendus laborum, deleniti, voluptate beatae doloribus odit atque ut
+        dignissimos dolore laudantium sit qui molestias harum provident est. Vel quas aut labore unde sapiente ab,
+        consequatur ex?
+        Aperiam earum, aliquam officia facilis pariatur nemo dicta. Fugit dicta consectetur officia minima? Qui id
+        officia blanditiis reiciendis. Dicta earum fuga eligendi soluta adipisci assumenda vero omnis, quasi animi
+        expedita?
+      </main>
+
+      <aside class="left-sidebar col-lg-3 col-md-4 col-lg-pull-9 col-md-pull-8">
+
+        <div class="vertical-slider panel panel-info">
+          <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#vertical-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#vertical-carousel" data-slide-to="1"></li>
+              <li data-target="#vertical-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="vertical-slider__image" src="assets/img/films/1263242.jpg" alt="film1">
+              </div>
+              <div class="item">
+                <img class="vertical-slider__image" src="assets/img/films/1289488.jpg" alt="film2">
+              </div>
+              <div class="item">
+                <img class="vertical-slider__image" src="assets/img/films/1401663.jpg" alt="film3">
+              </div>
+            </div>
+
+            <a class="left carousel-control" href="#vertical-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#vertical-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-search panel panel-info">
+          <div class="panel-heading">Поиск</div>
+          <div class="panel-body">
+            <form action="search.php">
+
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <div class="user-login panel panel-info">
+          <div class="panel-heading">Пользователь</div>
+          <div class="panel-body">
+
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#user-login-sidebar" aria-controls="user-login-sidebar"
+                  role="tab" data-toggle="tab"><span class="glyphicon glyphicon-log-in"></span></a></li>
+              <li role="presentation"><a href="#user-reg-sidebar" aria-controls="user-reg-sidebar" role="tab"
+                  data-toggle="tab"><span class="glyphicon glyphicon-user"></span></a></li>
+            </ul>
+
+            <div class="tab-content user-login__content">
+              <div role="tabpanel" class="tab-pane fade-in active" id="user-login-sidebar">
+
+                <form action="login.php">
+                  <div class="form-group"><input class="form-control input-lg" type="login" placeholder="Логин"></div>
+                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
+                </form>
+
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="user-reg-sidebar">
+
+                <form action="register.php">
+                  <div class="form-group"><input class="form-control input-lg" type="login" placeholder="Логин"></div>
+                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Email"></div>
+                  <button class="btn btn-default btn-block btn-lg" type="submit">Регистрация</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-news panel panel-info">
+          <div class="panel-heading">Новости сайта</div>
+          <div class="panel-body">
+            <div class="site-news-item">
+
+              <div>
+                <a class="site-news-item__link" href="">
+                  <div class="site-news-item__thumbnail thumbnail">
+                    <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
+                  </div>
+                  <div class="site-news-item__title">
+                    Мы запустили новый сервис - КиноМонстр
+                  </div>
+                  <div class="site-news-item__date">
+                    5 декабря 2016
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="site-news-item">
+
+              <div>
+                <a class="site-news-item__link" href="">
+                  <div class="site-news-item__thumbnail thumbnail">
+                    <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
+                  </div>
+                  <div class="site-news-item__title">
+                    На сайте добавлен новый функционалр
+                  </div>
+                  <div class="site-news-item__date">
+                    6 декабря 2016
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="site-news-item">
+              <a class="site-news-item__link" href="">
+                <div>
+                  <div class="site-news-item__thumbnail thumbnail">
+                    <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
+                  </div>
+                  <div class="site-news-item__title">
+                    Скорость скачивания фильмов увеличенар
+                  </div>
+                  <div class="site-news-item__date">
+                    7 декабря 2016
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="site-news-item"><a class="site-news-item__link" href="">
+                <div>
+                  <div class="site-news-item__thumbnail thumbnail">
+                    <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
+                  </div>
+                  <div class="site-news-item__title">
+                    Оптимизирована производительность сервера
+                  </div>
+                  <div class="site-news-item__date">
+                    8 декабря 2016
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="site-news-item"><a class="site-news-item__link" href="">
+                <div>
+                  <div class="site-news-item__thumbnail thumbnail">
+                    <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
+                  </div>
+                  <div class="site-news-item__title">
+                    Количество пользователей перевалила за 10 000
+                  </div>
+                  <div class="site-news-item__date">
+                    9 декабря 2016
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="top-films panel panel-info">
+          <div class="panel-heading">Рейтинг фильмов</div>
+          <div class="top-films__body panel-body">
+            <div class="top-films__list list-group">
+              <a href="#" class="top-films__item list-group-item">Марсианин
+                <span class="top-films__badge badge">8.9</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Иллюзия обмана 2
+                <span class="top-films__badge badge">8.8</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Из машины
+                <span class="top-films__badge badge">8.5</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Люси
+                <span class="top-films__badge badge">8.2</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Выхода нет
+                <span class="top-films__badge badge">8.0</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Стражи галактики
+                <span class="top-films__badge badge">7.9</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Человк муравей
+                <span class="top-films__badge badge">7.7</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Месть от кутюр
+                <span class="top-films__badge badge">7.5</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Люди Икс
+                <span class="top-films__badge badge">7.4</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Занесло
+                <span class="top-films__badge badge">7.3</span>
+              </a>
+              <a href="#" class="top-films__item list-group-item">Дочь Бога
+                <span class="top-films__badge badge">7.2</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -6,9 +6,10 @@ html {
 }
 
 body {
-  font-size: $font-size;
-  font-family: $font-main;
   overflow-y: scroll;
+
+  font-family: $font-main;
+  font-size: $font-size;
 }
 
 a {
@@ -16,10 +17,11 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
+
     color: $color-accent;
   }
 }
 
-h1{
+h1 {
   font-family: $font-header;
 }
