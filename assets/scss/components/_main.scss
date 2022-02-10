@@ -2,7 +2,15 @@
 @use "../mixins/index" as *;
 
 .main {
-  margin-bottom: $gap-xl;
+
+  @include md-min{
+    margin-bottom: 80px; 
+   }
+
+   @include md{
+    margin-bottom: 60px; 
+   }
+  
 
   .site-search {
     margin-bottom: $gap * 3;
@@ -14,6 +22,7 @@
 }
 
 .new-films {
+  overflow: hidden;
   &-row {
     margin-right: -$gap-sm;
     margin-bottom: -$gap;
@@ -25,8 +34,156 @@
     padding-right: $gap-sm;
     padding-left: $gap-sm;
 
+    &__link {
+      img {
+        width: 100% !important;
+      }
+    }
+
     &__thumbnail {
       margin-bottom: 0;
     }
+
+    &__caption {
+      padding: 9px;
+    }
+
+    &__title {
+      color: $color-black;
+      font-size: $font-size;
+      font-family: $font-main;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      white-space: nowrap; /* Текст не переносится */
+      overflow: hidden; /* Обрезаем всё за пределами блока */
+      text-overflow: ellipsis; /* Добавляем многоточие */
+    }
   }
+}
+
+.top-week {
+  overflow: hidden;
+
+  &-row {
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+    margin-left: -$gap-sm;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+
+    img {
+      width: 100% !important;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__caption {
+      padding: 9px;
+    }
+
+    &__title {
+      color: $color-black;
+      font-size: $font-size;
+      font-family: $font-main;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      white-space: nowrap; /* Текст не переносится */
+      overflow: hidden; /* Обрезаем всё за пределами блока */
+      text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+  }
+}
+
+
+.film-news {
+  overflow: hidden;
+
+  &-item {
+    
+    img {
+      width: 100% !important;
+    }
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__text{
+font-size: $font-size;
+font-family: $font-main;
+color: #333333;
+text-align: justify;
+margin-bottom: 10px;
+
+    }
+
+    &__btn{
+      background-color: $color-accent-light;
+      color:white;
+      border: none;
+      padding: 7px 13px;
+      margin-bottom: 30px;
+
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:hover,
+      &:focus{
+        background-color: $color-accent;
+        color:$color-white;
+        border: none;
+        outline: none;
+
+        .top-week-item__title{
+          color: $color-accent;
+        }
+      }
+
+  
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        }
+
+  }
+  // &-item {
+  //   margin-bottom: $gap;
+  //   padding-right: $gap-sm;
+  //   padding-left: $gap-sm;
+
+  //     img{
+  //     width: 100% !important;
+  //   }
+
+  //   &__thumbnail {
+  //     margin-bottom: 0;
+  //   }
+
+  //   &__caption{
+  //     padding: 9px;
+  //   }
+
+  //   &__title {
+  //     color: $color-black;
+  //     font-size: $font-size;
+  //     font-family: $font-main;
+  //     font-weight: 700;
+  //     text-align: center;
+  //     margin: 0;
+  //     white-space: nowrap; /* Текст не переносится */
+  //   overflow: hidden; /* Обрезаем всё за пределами блока */
+  //   text-overflow: ellipsis; /* Добавляем многоточие */
+
+  //   }
+  // }
 }

@@ -2,6 +2,7 @@
 @use "../mixins/index" as *;
 
 .sidebar {
+  
   margin-bottom: $gap-xl;
 }
 
@@ -17,6 +18,11 @@
 
 .user-login {
   position: relative;
+
+  @include md {
+    margin-bottom: 60px;
+  }
+
 
   &__tabs {
     position: absolute;

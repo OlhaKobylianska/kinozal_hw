@@ -31,6 +31,14 @@
       }
     }
   }
+
+  .navbar-header {
+    text-align: center;
+  }
+  .navbar-toggle {
+    float: none;
+    margin-right: 0;
+  }
 }
 
 .navbar-left {
@@ -42,16 +50,9 @@
       margin: 5px 5px 5px 0;
     }
   }
-  .navbar-header {
-    text-align: center;
-  }
+    }
 
-  .navbar-toggle {
-    float: none;
 
-    margin-right: 0;
-  }
-}
 
 .navbar-right {
   @include sm-min {
@@ -98,4 +99,11 @@
 
 .thumbnail {
   transition: background-color 0.25s;
+}
+
+
+.left-sidebar{
+   @include md{
+    margin-bottom: 80px; 
+   }
 }
