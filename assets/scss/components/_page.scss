@@ -1,2 +1,79 @@
 @use "../presets/index" as *;
 @use "../mixins/index" as *;
+
+
+.films-video {
+  overflow: hidden;
+  position: relative;
+  
+
+  a{
+    color:inherit;
+    text-decoration: none;
+  }
+
+  &__well{
+    font-size: 1.2em;
+    text-align: center;
+
+    &-badge{
+      white-space: nowrap;
+
+      &:not(:last-of-type) {
+        margin-right: 15px;
+    }
+     }
+
+    &-info{
+      font-size: 0.8em;
+      margin-left: 5px;
+     }
+     
+  }
+}
+
+// @include xs{
+//   .films-video__well-info--second{
+//     margin-right: $gap;
+//   }
+// }
+
+// @include xs-min{
+//   .films-video__well-info--second{
+//     margin-right: 0;
+//   }
+// }
+
+.film-description{
+  overflow: hidden;
+}
+
+.film-comments{
+  overflow: hidden;
+
+  &-name{
+    margin-left: 7.25px;
+  }
+
+  &-item:first-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.write-comment{
+  overflow: hidden;
+  
+  &__btn{
+    background-color: $color-accent-light;
+    color:white;
+    border-color: $color-accent-light;
+    transition: all 0.5s;
+
+    &:hover,
+    &:focus{
+      color: white; 
+      background-color: $color-accent;
+
+    }
+  }
+}
