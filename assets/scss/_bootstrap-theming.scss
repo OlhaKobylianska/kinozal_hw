@@ -50,9 +50,7 @@
       margin: 5px 5px 5px 0;
     }
   }
-    }
-
-
+}
 
 .navbar-right {
   @include sm-min {
@@ -101,13 +99,11 @@
   transition: background-color 0.25s;
 }
 
-
-.left-sidebar{
-   @include md{
-    margin-bottom: 80px; 
-   }
+.left-sidebar {
+  @include md {
+    margin-bottom: 80px;
+  }
 }
-
 
 .embed-responsive {
   border: 1px solid #d5d5d5;
@@ -115,9 +111,7 @@
   border-radius: 4px 4px 0 0;
 }
 
-.well{
-  border-color:$color-gray;
+.well {
+  border-color: $color-gray;
   background-color: $color-gray-light;
-
-
 }

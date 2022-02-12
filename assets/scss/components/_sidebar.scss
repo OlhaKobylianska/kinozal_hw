@@ -2,13 +2,11 @@
 @use "../mixins/index" as *;
 
 .sidebar {
-  
   margin-bottom: $gap-xl;
 }
 
 .vertical-slider {
   overflow: hidden;
-
   border-radius: 4px;
 
   &__image {
@@ -22,7 +20,6 @@
   @include md {
     margin-bottom: 60px;
   }
-
 
   &__tabs {
     position: absolute;

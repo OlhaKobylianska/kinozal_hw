@@ -2,56 +2,26 @@
 @use "../mixins/index" as *;
 
 .main {
-
-  @include md-min{
-    margin-bottom: 80px; 
-   }
-
-   @include md{
-    margin-bottom: 80px; 
-   }
-  
+  margin-bottom: 80px;
 
   .site-search {
     margin-bottom: $gap * 3;
   }
-
   .site-login {
     margin-bottom: $gap * 4;
   }
 }
 
 .new-films {
-  overflow: hidden;
   &-row {
-    margin-right: -$gap-sm;
-    margin-bottom: -$gap;
-    margin-left: -$gap-sm;
+    @extend %row;
   }
 
   &-item {
-    margin-bottom: $gap;
-    padding-right: $gap-sm;
-    padding-left: $gap-sm;
-
-    &__link {
-      img {
-        width: 100% !important;
-      }
-    }
+    @extend %item;
 
     &__thumbnail {
-      margin-bottom: 0;
-     transition: all 0.5s;;
-
-      &:hover,
-      &:focus{
-        background-color: $color-accent;
-
-        h3{
-          color: $color-white;
-        }
-      }
+      @extend %thumbnail;
     }
 
     &__caption {
@@ -59,49 +29,21 @@
     }
 
     &__title {
-      color: $color-black;
-      font-size: $font-size;
-      font-family: $font-main;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      white-space: nowrap; /* Текст не переносится */
-      overflow: hidden; /* Обрезаем всё за пределами блока */
-      text-overflow: ellipsis; /* Добавляем многоточие */
+      @extend %title;
     }
   }
 }
 
 .top-week {
-  overflow: hidden;
-
   &-row {
-    margin-right: -$gap-sm;
-    margin-bottom: -$gap;
-    margin-left: -$gap-sm;
+    @extend %row;
   }
 
   &-item {
-    margin-bottom: $gap;
-    padding-right: $gap-sm;
-    padding-left: $gap-sm;
-
-    img {
-      width: 100% !important;
-    }
+    @extend %item;
 
     &__thumbnail {
-      margin-bottom: 0;
-      transition: all 0.5s;
-
-      &:hover,
-      &:focus{
-        background-color: $color-accent;
-
-        h3{
-          color: $color-white;
-        }
-      }
+      @extend %thumbnail;
     }
 
     &__caption {
@@ -109,114 +51,58 @@
     }
 
     &__title {
-      color: $color-black;
-      font-size: $font-size;
-      font-family: $font-main;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      white-space: nowrap; /* Текст не переносится */
-      overflow: hidden; /* Обрезаем всё за пределами блока */
-      text-overflow: ellipsis; /* Добавляем многоточие */
+      @extend %title;
     }
   }
 }
 
-
 .film-news {
-  overflow: hidden;
-
   &-item {
-    &__caption a{
+    &__caption a {
       transition: all 0.5s;
     }
- 
-    &:hover,
-    &:focus{
 
+    &:hover,
+    &:focus {
       a {
         color: $color-accent;
       }
 
-     .film-news-item__btn{
-      background-color: $color-accent;
-      color:$color-white;
-      border: none;
-      outline: none;  
+      .film-news-item__btn {
+        background-color: $color-accent;
+        color: $color-white;
       }
 
-      .film-news-item__thumbnail{
+      .film-news-item__thumbnail {
         background-color: $color-accent;
       }
-            
     }
-    
-    img {
-      width: 100% !important;
-    }
+
     &__thumbnail {
       margin-bottom: 0;
       transition: all 0.5s;
     }
 
-    &__text{
-font-size: $font-size;
-font-family: $font-main;
-color: #333333;
-text-align: justify;
-margin-bottom: 10px;
-
+    &__text {
+      font-size: $font-size;
+      font-family: $font-main;
+      color: #333333;
+      text-align: justify;
+      margin-bottom: 10px;
     }
 
-    &__btn{
-      background-color: $color-accent-light;
-      color:white;
-      border: none;
-      padding: 7px 13px;
+    &__btn {
+      @extend %btn-style;
       margin-bottom: 30px;
-      transition: all 0.5s;
 
-      a{
+      a {
         text-decoration: none;
         color: inherit;
-        
-             }
+      }
+    }
 
-     }
-
-      &:not(:last-child) {
-        margin-bottom: 20px;
-        }
-
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
-  // &-item {
-  //   margin-bottom: $gap;
-  //   padding-right: $gap-sm;
-  //   padding-left: $gap-sm;
-
-  //     img{
-  //     width: 100% !important;
-  //   }
-
-  //   &__thumbnail {
-  //     margin-bottom: 0;
-  //   }
-
-  //   &__caption{
-  //     padding: 9px;
-  //   }
-
-  //   &__title {
-  //     color: $color-black;
-  //     font-size: $font-size;
-  //     font-family: $font-main;
-  //     font-weight: 700;
-  //     text-align: center;
-  //     margin: 0;
-  //     white-space: nowrap; /* Текст не переносится */
-  //   overflow: hidden; /* Обрезаем всё за пределами блока */
-  //   text-overflow: ellipsis; /* Добавляем многоточие */
-
-  //   }
-  // }
 }
