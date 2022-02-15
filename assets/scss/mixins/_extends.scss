@@ -1,14 +1,16 @@
 @use "../presets/index" as *;
+@use "../mixins/mixins-media" as *;
 
 %text-shadow {
-  text-shadow: 0 0 5px $color-black;
+  text-shadow: 0 0 5px $color-black, 0 0 10px $color-black, 0 0 20px $color-black;
 }
 
 %btn-style {
-  background-color: $color-accent-light;
+  transition: all 0.5s;
+
   color: white;
   border-color: rgba($color-accent, 0.3);
-  transition: all 0.5s;
+  background-color: $color-accent-light;
 }
 
 %row {
@@ -23,21 +25,42 @@
   padding-left: $gap-sm;
 }
 
+%caption {
+  padding: 9px;
+
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
+}
+
 %title {
-  color: $color-black;
-  font-size: $font-size;
-  font-family: $font-main;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  white-space: nowrap; /* Текст не переносится */
   overflow: hidden;
+
+  margin: 0;
+
+  text-align: center;
+  white-space: nowrap; /* Текст не переносится */
   text-overflow: ellipsis; /* Добавляем многоточие */
+
+  color: $color-black;
+
+  font-family: $font-main;
+  font-size: $font-size;
+  font-weight: 700;
 }
 
 %thumbnail {
   margin-bottom: 0;
+
   transition: all 1s;
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
 
   &:hover,
   &:focus {

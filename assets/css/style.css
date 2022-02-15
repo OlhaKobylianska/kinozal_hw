@@ -343,16 +343,16 @@ template {
 }
 
 .header-logo__title, .header-logo__description {
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
 }
 
 .write-comment__btn, .film-news-item__btn {
-  background-color: #f0ad4f;
-  color: white;
-  border-color: rgba(223, 138, 19, 0.3);
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  color: white;
+  border-color: rgba(223, 138, 19, 0.3);
+  background-color: #f0ad4f;
 }
 
 .new-films-row, .top-week-row {
@@ -367,19 +367,23 @@ template {
   padding-left: 7.5px;
 }
 
+.new-films-item__caption, .top-week-item__caption {
+  padding: 9px;
+}
+
 .new-films-item__title, .top-week-item__title {
-  color: #000000;
-  font-size: 16px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  text-align: center;
+  overflow: hidden;
   margin: 0;
+  text-align: center;
   white-space: nowrap;
   /* Текст не переносится */
-  overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   /* Добавляем многоточие */
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .new-films-item__thumbnail, .top-week-item__thumbnail {
@@ -387,6 +391,10 @@ template {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+}
+.new-films-item__thumbnail img, .top-week-item__thumbnail img {
+  width: 100%;
+  margin: 0;
 }
 .new-films-item__thumbnail:hover, .top-week-item__thumbnail:hover, .new-films-item__thumbnail:focus, .top-week-item__thumbnail:focus {
   background-color: #df8a13;
@@ -467,9 +475,9 @@ html {
 }
 
 body {
+  overflow-y: scroll;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  overflow-y: scroll;
 }
 
 a {
@@ -481,47 +489,42 @@ a:hover, a:focus {
 }
 
 h1 {
-  font-family: "PT Serif", serif;
   position: relative;
+  font-family: "PT Serif", serif;
 }
 h1::after {
-  content: "";
   position: absolute;
   width: 100%;
-  border-bottom: 3px solid #f0ad4f;
   margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
 }
 
 h2 {
-  font-family: "PT Serif", serif;
   position: relative;
   padding-left: 45px;
+  font-family: "PT Serif", serif;
 }
 h2::before {
-  content: "";
   position: absolute;
   left: 0;
   width: 30px;
+  content: "";
   border-top: 3px solid #f0ad4f;
 }
 h2::after {
-  content: "";
   position: absolute;
   width: 100%;
-  border-bottom: 3px solid #f0ad4f;
   margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
 }
 
 h3 {
-  font-size: 1.5rem;
+  margin-top: 0;
   color: #23527c;
-  font-weight: 400;
   font-family: "PT Sans", sans-serif;
-  margin-top: 0px;
-}
-
-h3 {
-  font-size: 18px;
+  font-weight: 400;
 }
 
 .hidden {
@@ -575,12 +578,6 @@ section {
   margin-bottom: 60px;
 }
 
-.new-films-item__caption {
-  padding: 9px;
-}
-.top-week-item__caption {
-  padding: 9px;
-}
 .film-news-item__caption a {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -589,11 +586,11 @@ section {
 .film-news-item:hover a, .film-news-item:focus a {
   color: #df8a13;
 }
-.film-news-item:hover .film-news-item__btn, .film-news-item:focus .film-news-item__btn {
-  background-color: #df8a13;
+.film-news-item:hover .film-news-item__btn {
   color: #ffffff;
+  background-color: #df8a13;
 }
-.film-news-item:hover .film-news-item__thumbnail, .film-news-item:focus .film-news-item__thumbnail {
+.film-news-item:hover .film-news-item__thumbnail {
   background-color: #df8a13;
 }
 .film-news-item__thumbnail {
@@ -602,12 +599,16 @@ section {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.film-news-item__thumbnail img {
+  width: 100%;
+  margin: 0 !important;
+}
 .film-news-item__text {
-  font-size: 16px;
-  font-family: "PT Sans", sans-serif;
-  color: #333333;
-  text-align: justify;
   margin-bottom: 10px;
+  text-align: justify;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
 }
 .film-news-item__btn {
   margin-bottom: 30px;
@@ -624,12 +625,12 @@ section {
   position: relative;
 }
 .films-video a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 .films-video__well {
-  font-size: 1.2em;
   text-align: center;
+  font-size: 1.2em;
 }
 .films-video__well-badge {
   white-space: nowrap;
@@ -638,8 +639,8 @@ section {
   margin-right: 15px;
 }
 .films-video__well-info {
-  font-size: 0.8em;
   margin-left: 5px;
+  font-size: 0.8em;
 }
 
 .film-comments-name {
@@ -649,7 +650,7 @@ section {
   margin-bottom: 30px;
 }
 
-.write-comment__btn:hover, .write-comment__btn:focus {
+.write-comment__btn:hover {
   color: white;
   background-color: #df8a13;
 }
@@ -791,36 +792,39 @@ section {
   color: #ffffff;
 }
 .footer ul {
-  padding: 0;
   margin: 0 0 10px 0;
+  padding: 0;
 }
 .footer li {
-  list-style: none;
   margin: 0;
+  list-style: none;
   color: #6f6f6f;
 }
 .footer-author {
-  color: #d5d5d5;
-  text-align: center;
   margin: 20px auto;
+  text-align: center;
+  color: #d5d5d5;
 }
 @media (min-width: 576px) {
+  .new-films-item__caption, .top-week-item__caption {
+    font-size: 1.5rem;
+  }
   h1 {
-    font-size: 3rem;
     margin: -9.99999999px 0 1em 0;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem;
     margin: 60px 0 45px 0;
+    font-size: 2.5rem;
   }
   h2::before {
     margin: 10px 0 0 0;
   }
-  h3 {
-    font-size: 1.5rem;
-  }
   .header-logo__title {
     font-size: 3.5rem;
+  }
+  .film-news-item__caption {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -854,22 +858,25 @@ section {
   }
 }
 @media (max-width: 575.8px) {
+  .new-films-item__caption, .top-week-item__caption {
+    font-size: 1.25rem;
+  }
   h1 {
+    margin: 0 0 1em 0;
     font-size: 2rem;
     font-weight: 400;
-    margin: 0 0 1em 0;
   }
   h2 {
+    margin: 45px 0 30px 0;
     font-size: 1.75rem;
-    margin: 45px 0 15px 0;
   }
   h2::before {
     margin: 7px 0 0 0;
   }
-  h3 {
-    font-size: 1.25rem;
-  }
   .header-logo__title {
     font-size: 2.5rem;
+  }
+  .film-news-item__caption {
+    font-size: 1.25rem;
   }
 }

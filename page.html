@@ -75,7 +75,7 @@
             <form action="search.php">
 
               <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <input type="text" name="search-info" class="form-control" placeholder="Поиск по сайту">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="button">
                     <span class="glyphicon glyphicon-search"></span>
@@ -103,8 +103,10 @@
               <div role="tabpanel" class="tab-pane fade-in active" id="user-login-main">
 
                 <form action="login.php">
-                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
-                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  <div class="form-group"><input name="email" class="form-control input-lg" type="email"
+                      placeholder="Логин"></div>
+                  <div class="form-group"><input name="password" class="form-control input-lg" type="password"
+                      placeholder="Пароль">
                   </div>
                   <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
                 </form>
@@ -113,10 +115,13 @@
               <div role="tabpanel" class="tab-pane fade" id="user-reg-main">
 
                 <form action="register.php">
-                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
-                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  <div class="form-group"><input name="new_name" class="form-control input-lg" type="email"
+                      placeholder="Логин"></div>
+                  <div class="form-group"><input name="new_password" class="form-control input-lg" type="password"
+                      placeholder="Пароль">
                   </div>
-                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Email"></div>
+                  <div class="form-group"><input name="new_email" class="form-control input-lg" type="email"
+                      placeholder="Email"></div>
                   <button class="btn btn-default btn-block btn-lg" type="submit">Регистрация</button>
                 </form>
 
@@ -208,10 +213,10 @@
 
             <form action="comment.php">
               <div class="form-group">
-                <input type="text" class="form-control input-lg" name="name" placeholder="Ваше имя">
+                <input type="text" class="form-control input-lg" name="name-comment" placeholder="Ваше имя">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control input-lg" name="email" placeholder="Укажите Email">
+                <input type="email" class="form-control input-lg" name="email-comment" placeholder="Укажите Email">
               </div>
 
               <div class="form-group">
@@ -267,7 +272,7 @@
             <form action="search.php">
 
               <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <input type="text" name="search-info" class="form-control" placeholder="Поиск по сайту">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="button">
                     <span class="glyphicon glyphicon-search"></span>
@@ -294,8 +299,10 @@
               <div role="tabpanel" class="tab-pane fade-in active" id="user-login-sidebar">
 
                 <form action="login.php">
-                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
-                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  <div class="form-group"><input name="email" class="form-control input-lg" type="email"
+                      placeholder="Логин"></div>
+                  <div class="form-group"><input name="password" class="form-control input-lg" type="password"
+                      placeholder="Пароль">
                   </div>
                   <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
                 </form>
@@ -304,10 +311,13 @@
               <div role="tabpanel" class="tab-pane fade" id="user-reg-sidebar">
 
                 <form action="register.php">
-                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Логин"></div>
-                  <div class="form-group"><input class="form-control input-lg" type="password" placeholder="Пароль">
+                  <div class="form-group"><input name="new_name" class="form-control input-lg" type="email"
+                      placeholder="Логин"></div>
+                  <div class="form-group"><input name="new_password" class="form-control input-lg" type="password"
+                      placeholder="Пароль">
                   </div>
-                  <div class="form-group"><input class="form-control input-lg" type="email" placeholder="Email"></div>
+                  <div class="form-group"><input name="new_email" class="form-control input-lg" type="email"
+                      placeholder="Email"></div>
                   <button class="btn btn-default btn-block btn-lg" type="submit">Регистрация</button>
                 </form>
 
@@ -450,60 +460,62 @@
   </div>
 
   <footer class="footer container-fluid">
-    <div class="container">
-      <div class="row">
+    <div class="row">
+      <div class="container">
+        <div class="row">
 
-        <div class="footer-first col-md-3 col-xs-6 col-xs-12">
-          <h4 class="footer-title">Lorem ipsum dolor sit.</h4>
-          <ul>
-            <li><a href="">Lorem ipsum dolor.</a></li>
-            <li><a href="">Delectus, labore, incidunt.</a></li>
-            <li><a href="">Eos neque, eius.</a></li>
-            <li><a href="">Minus, omnis vel.</a></li>
-          </ul>
+          <div class="footer-first col-md-3 col-xs-6 col-xs-12">
+            <h4 class="footer-title">Lorem ipsum dolor sit.</h4>
+            <ul>
+              <li><a href="">Lorem ipsum dolor.</a></li>
+              <li><a href="">Delectus, labore, incidunt.</a></li>
+              <li><a href="">Eos neque, eius.</a></li>
+              <li><a href="">Minus, omnis vel.</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-second col-md-3 col-xs-6 col-xs-12">
+            <h4 class="footer-title">Voluptatem, commodi, at.</h4>
+            <ul>
+              <li><a href="">Lorem ipsum dolor.</a></li>
+              <li><a href="">Delectus, labore, incidunt.</a></li>
+              <li><a href="">Eos neque, eius.</a></li>
+              <li><a href="">Minus, omnis vel.</a></li>
+              <li><a href="">Aspernatur, fugiat, possimus!</a></li>
+            </ul>
+
+          </div>
+
+          <div class="footer-third col-md-3 col-xs-6 col-xs-12">
+            <h4 class="footer-title">Sed, ducimus perspiciatis.</h4>
+            <ul>
+              <li><a href="">Lorem ipsum dolor.</a></li>
+              <li><a href="">Delectus, labore, incidunt.</a></li>
+              <li><a href="">Eos neque, eius.</a></li>
+              <li><a href="">Minus, omnis vel.</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-fourth col-md-3 col-xs-6 col-xs-12">
+            <h4 class="footer-title">Reiciendis, minima, a?</h4>
+            <ul>
+              <li><a href="">Lorem ipsum dolor.</a></li>
+              <li><a href="">Delectus, labore, incidunt.</a></li>
+              <li><a href="">Eos neque, eius.</a></li>
+              <li><a href="">Minus, omnis vel.</a></li>
+              <li><a href="">Aspernatur, fugiat, possimus!</a></li>
+            </ul>
+
+          </div>
+
         </div>
-
-        <div class="footer-second col-md-3 col-xs-6 col-xs-12">
-          <h4 class="footer-title">Voluptatem, commodi, at.</h4>
-          <ul>
-            <li><a href="">Lorem ipsum dolor.</a></li>
-            <li><a href="">Delectus, labore, incidunt.</a></li>
-            <li><a href="">Eos neque, eius.</a></li>
-            <li><a href="">Minus, omnis vel.</a></li>
-            <li><a href="">Aspernatur, fugiat, possimus!</a></li>
-          </ul>
+        <div class="footer-author">
+          <b>
+            <a href="https://fomenko.top/" target="_blank">Учебный шаблон Bootstrap v3.4.1. Разработка - Андрей
+              Фоменко</a>
+          </b>
 
         </div>
-
-        <div class="footer-third col-md-3 col-xs-6 col-xs-12">
-          <h4 class="footer-title">Sed, ducimus perspiciatis.</h4>
-          <ul>
-            <li><a href="">Lorem ipsum dolor.</a></li>
-            <li><a href="">Delectus, labore, incidunt.</a></li>
-            <li><a href="">Eos neque, eius.</a></li>
-            <li><a href="">Minus, omnis vel.</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-fourth col-md-3 col-xs-6 col-xs-12">
-          <h4 class="footer-title">Reiciendis, minima, a?</h4>
-          <ul>
-            <li><a href="">Lorem ipsum dolor.</a></li>
-            <li><a href="">Delectus, labore, incidunt.</a></li>
-            <li><a href="">Eos neque, eius.</a></li>
-            <li><a href="">Minus, omnis vel.</a></li>
-            <li><a href="">Aspernatur, fugiat, possimus!</a></li>
-          </ul>
-
-        </div>
-
-      </div>
-      <div class="footer-author">
-        <b>
-          <a href="https://fomenko.top/" target="_blank">Учебный шаблон Bootstrap v3.4.1. Разработка - Андрей
-            Фоменко</a>
-        </b>
-
       </div>
     </div>
   </footer>

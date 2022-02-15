@@ -5,13 +5,15 @@
   position: relative;
 
   a {
-    color: inherit;
     text-decoration: none;
+
+    color: inherit;
   }
 
   &__well {
-    font-size: 1.2em;
     text-align: center;
+
+    font-size: 1.2em;
 
     &-badge {
       white-space: nowrap;
@@ -22,8 +24,9 @@
     }
 
     &-info {
-      font-size: 0.8em;
       margin-left: 5px;
+
+      font-size: 0.8em;
     }
   }
 }
@@ -42,8 +45,7 @@
   &__btn {
     @extend %btn-style;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: white;
       background-color: $color-accent;
     }

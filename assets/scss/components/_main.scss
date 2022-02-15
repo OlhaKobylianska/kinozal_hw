@@ -25,7 +25,7 @@
     }
 
     &__caption {
-      padding: 9px;
+      @extend %caption;
     }
 
     &__title {
@@ -47,7 +47,7 @@
     }
 
     &__caption {
-      padding: 9px;
+      @extend %caption;
     }
 
     &__title {
@@ -58,8 +58,16 @@
 
 .film-news {
   &-item {
-    &__caption a {
-      transition: all 0.5s;
+    &__caption {
+      @include xs-min {
+        font-size: 1.5rem;
+      }
+      @include xs {
+        font-size: 1.25rem;
+      }
+      a {
+        transition: all 0.5s;
+      }
     }
 
     &:hover,
@@ -67,10 +75,12 @@
       a {
         color: $color-accent;
       }
+    }
 
+    &:hover {
       .film-news-item__btn {
-        background-color: $color-accent;
         color: $color-white;
+        background-color: $color-accent;
       }
 
       .film-news-item__thumbnail {
@@ -80,23 +90,34 @@
 
     &__thumbnail {
       margin-bottom: 0;
+
       transition: all 0.5s;
+
+      img {
+        width: 100%;
+        margin: 0 !important;
+      }
     }
 
     &__text {
-      font-size: $font-size;
-      font-family: $font-main;
-      color: #333333;
-      text-align: justify;
       margin-bottom: 10px;
+
+      text-align: justify;
+
+      color: #333333;
+
+      font-family: $font-main;
+      font-size: $font-size;
     }
 
     &__btn {
-      @extend %btn-style;
       margin-bottom: 30px;
+
+      @extend %btn-style;
 
       a {
         text-decoration: none;
+
         color: inherit;
       }
     }
